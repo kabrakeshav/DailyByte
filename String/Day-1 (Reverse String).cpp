@@ -1,30 +1,25 @@
-/* *** *** ***
-
-This question is asked by Google. Given a string, reverse all of its 
-characters and return the resulting string.
-
-Ex: Given the following strings ...
-
-	“Cat”, return “taC”
-	“The Daily Byte”, return "etyB yliaD ehT”
-	“civic”, return “civic”
-
-*** *** *** */
+/**
+ * Google
+ * Given a string, reverse all of its characters and return the resulting string.
+ */
 
 
 
 #include<iostream>
 using namespace std;
 
-
-int main()
+/**
+ * @author keshav kabra
+ * @since May 18, 2021
+ */
+ 
+ 
+/**
+  * @param string str to be reversed
+  * @return reversed string object using loop
+*/
+string reverse(string str)
 {
-	// getting string from user
-	string str;
-	cout<<"Enter a string : ";
-	getline(cin, str);
-	
-	// to store reversed string
 	string ans = "";
 	
 	// logic to reverse string
@@ -32,9 +27,17 @@ int main()
 	{
 		ans = ans + str[i];
 	}
-	
-	// displaying reverse string
-	cout<<"\nReversed string : "<<ans;
+	return ans;
+}
+
+
+// driver - main function
+int main()
+{
+	// TESTCASES
+	cout<<reverse("Cat")<<"\n";
+	cout<<reverse("The Daily Byte")<<"\n";
+	cout<<reverse("civic")<<"\n";
 	
 	return 0;
 }

@@ -1,26 +1,24 @@
-/* *** *** ***
-
-This question is asked by Facebook. Given a string, return whether 
-or not it forms a palindrome ignoring case and non-alphabetical characters.
-Note: a palindrome is a sequence of characters that reads the 
-same forwards and backwards.
-
-Ex: Given the following strings...
-
-"level", return true
-"algorithm", return false
-"A man, a plan, a canal: Panama.", return true
-
-*** *** *** */
+/**
+ * Facebook
+ * Given a string, return whether or not it forms a palindrome ignoring case and non-alphabetical characters.
+ */
 
 
 #include<iostream>
 #include<algorithm>
 using namespace std;
 
+/**
+ * @author keshav kabra
+ * @since May 18, 2021
+ */
 
-// function to return if string is palindrom or not
-// ignoring all non-alphabetic characters
+/**
+	 * @param string str
+	 * @return boolean, true if it is valid palindrome
+	 * function to return if string is palindrom or not
+	 * ignoring all non-alphabetic characters
+*/
 bool isPalindrome(string str)
 {
 	if(str.length() <= 1)
@@ -64,23 +62,22 @@ bool isPalindrome(string str)
 // main function - driver code
 int main()
 {
+	// TESTCASES
 	
-	// getting string from user
-	string str;
-	cout<<"Enter a string : ";
-	getline(cin, str);
-	
+	string str = "level";
 	// converting to lower-case letter string
 	// we need to ignore the cases while cheking
 	transform(str.begin(), str.end(), str.begin(), ::tolower);
-	
 	// calling function to check for palindrome
-	bool x = isPalindrome(str);
+	cout<<isPalindrome(str)<<"\n";
 	
-	// displaying output
-	x==true ? cout<<"True" : cout<<"False";
+	str = "algorithm";
+	transform(str.begin(), str.end(), str.begin(), ::tolower);
+	cout<<isPalindrome(str)<<"\n";
+	
+	str = "A man, a plan, a canal: Panama.";
+	transform(str.begin(), str.end(), str.begin(), ::tolower);
+	cout<<isPalindrome(str)<<"\n";
 	
 	return 0;
-	
-	
 }

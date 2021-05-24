@@ -11,7 +11,7 @@ using namespace std;
 
 /**
  * @author keshav kabra
- * @since May 23, 2021
+ * @since May 22, 2021
  */
 
 
@@ -34,7 +34,8 @@ string find_prefix(string answer, string str)
 
 // function that will take each word from the given vector
 // pass it to helper function 'find_prefix' and update
-// the longest-common-prefix found so far
+// the longest-common-prefix found so far and
+// returns the longest-common-prefix as answer
 string longestCommonPrefix(vector<string>& v) 
 {
     if(v.size() == 0)
@@ -51,6 +52,8 @@ string longestCommonPrefix(vector<string>& v)
 
 int main()
 {
+	
+	// TESTCASES
 	vector<string> v1 = {"colorado", "color", "cold"};
 	vector<string> v2 = {"a", "b", "c"};
 	vector<string> v3 = {"spot", "spotty", "spotted"};

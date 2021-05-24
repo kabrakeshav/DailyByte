@@ -1,25 +1,31 @@
-/* *** *** ***
-This question is asked by Apple. Given two binary strings 
-(strings containing only 1s and 0s) return their sum 
-(also as a binary string).
-Note: neither binary string will contain leading 0s 
-unless the string itself is 0
-
-Ex: Given the following binary strings...
-
-"100" + "1", return "101"
-"11" + "1", return "100"
-"1" + "0", return  "1"
-
-
-*** *** *** */
+/**
+ * Apple
+ * Given two binary strings (strings containing only 1s and 0s) return their sum (also as a binary string).
+ * Note: neither binary string will contain leading 0s unless the string itself is 0
+ */
 
 
 #include<iostream>
 using namespace std;
 
 
+/**
+ * @author gaurav kabra
+ * @since May 20, 2021
+ */
 
+
+/**
+	 * Adds two binary strings to another binary string.
+	 * @param first binary string, a
+	 * @param second binary string, b
+	 * @return sum of the two binary strings as binary string
+	 * lOGIC :
+	 	0 + 0 = 0 ( carry is 0 )
+	 	1 + 0 = 1 ( carry is 0 )
+	 	0 + 1 = 1 ( carry is 0 )
+	 	1 + 1 = 0 ( carry is 1 )
+*/
 string addBinary(string a, string b)
 {
     
@@ -54,8 +60,12 @@ string addBinary(string a, string b)
     return ans;
 }
 
+
+// main function - driver code
 int main()
 {
+	
+	// TESTCASES
 	cout<<addBinary("100", "1")<<"\n";
 	cout<<addBinary("11", "1")<<"\n";
 	cout<<addBinary("1", "0")<<"\n";

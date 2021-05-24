@@ -1,27 +1,25 @@
-/* *** *** ***
-
-This question is asked by Google. Given a string, return 
-whether or not it uses capitalization correctly. A string 
-correctly uses capitalization if all letters are capitalized, 
-no letters are capitalized, or only the first letter is capitalized.
-
-Ex: Given the following strings...
-	"USA", return true
-	"Calvin", return true
-	"compUter", return false
-	"coding", return true 
-
-*** *** *** */
-
-
+/**
+ * Google
+ * Given a string, return whether or not it uses capitalization correctly. 
+ * A string correctly uses capitalization if all letters are capitalized, 
+ * no letters are capitalized, or only the first letter is capitalized.
+ */
 
 
 #include<iostream>
 using namespace std;
 
+/**
+ * @author keshav kabra
+ * @since May 19, 2021
+ */
 
 
-// function is_correct
+
+/**
+	 * @param string s
+	 * @return boolean, if correctly capitalized
+*/
 /* returns true if for passed string :
 	>> no letter is capital
 	>> first letter is capital
@@ -74,23 +72,15 @@ bool is_correct(string str)
 
 
 
-// main function
+// main function - driver code
 int main()
 {
-	
-	// getting string from user
-	string str;
-	cout<<"Enter a string : ";
-	cin>>str;
-	
-	
-	// calling the function to check for correctness
-	bool x = is_correct(str);
-	
-	
-	// displaying result
-	x==true ? cout<<"True" : cout<<"False";
-	
+
+	// TESTCASES
+	cout<<is_correct("USA")<<"\n";
+	cout<<is_correct("Calvin")<<"\n";
+	cout<<is_correct("compUter")<<"\n";
+	cout<<is_correct("coding")<<"\n";
 	
 	return 0;
 }
