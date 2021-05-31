@@ -75,25 +75,25 @@ void display(vector<int> &v)
 // main function - driver code
 int main()
 {
-    vector<int> ans;
+    	vector<int> ans;
     
 	// TESTCASES
-	
+
 	vector<int> v1 = {2, 4, 4, 2};
 	vector<int> v2 = {2, 4};
 	ans = intersection(v1, v2);
 	display(ans);
 
-    v1 = {1, 2, 3, 3};
+	v1 = {1, 2, 3, 3};
 	v2 = {3, 3};
 	ans = intersection(v1, v2);
 	display(ans);
 
-    v1 = {2, 4, 6, 8};
+	v1 = {2, 4, 6, 8};
 	v2 = {1, 3, 5, 7};
 	ans = intersection(v1, v2);
 	display(ans);
-	
+
 	return 0;
 }
 
