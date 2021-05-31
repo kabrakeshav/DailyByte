@@ -7,7 +7,7 @@
  */
  
 
-// header files
+// header file(s)
 #include<iostream>
 #include<vector>
 #include<sstream>
@@ -23,7 +23,7 @@ using namespace std;
 /** function uncommonFromSentences
  * @param string, denoting first string
  * @param string, denoting second string
- * @return vector, denoting the words that are uncommon in the two strings
+ * @return vector, denoting the list of words that are uncommon in the two strings
  */ 
 vector<string> uncommonFromSentences(string str1, string str2)
 {
