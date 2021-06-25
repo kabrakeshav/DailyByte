@@ -1,6 +1,6 @@
 /**
  * Given a binary tree return all the values you’d be able to see 
- * if you were standing on the right side of it with values ordered from top to bottom.
+ * if you were standing on the left side of it with values ordered from top to bottom.
  */
 
 #include<iostream>
