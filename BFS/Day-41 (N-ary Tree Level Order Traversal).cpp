@@ -1,6 +1,7 @@
 /**
- * Given a binary tree, return its zig-zag level order traversal (i.e. its level order traversal 
- * from left to right the first level, right to left the level the second, etc.).
+ * Gather N-ary Tree Levels
+ * Given an n-ary tree, return its level order traversal.
+ * (an n-ary tree is a tree in which each node has no more than N children)
  */
 
 
