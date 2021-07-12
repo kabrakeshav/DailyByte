@@ -102,7 +102,7 @@ vector<string> letterCombinations(string digits)
 
 
 /** function print_answer
- * @param vector<int>, denoting the array which stores all permutations of string
+ * @param vector<string>, denoting the array which stores all permutations of string
  *
  * displays the contents on vector on console
  *

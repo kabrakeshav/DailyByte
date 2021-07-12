@@ -90,7 +90,7 @@ vector<string> generateParenthesis(int n)
 
 
 /** function print_answer
- * @param vector<int>, denoting the array which stores all permutations of parentheses 
+ * @param vector<string>, denoting the array which stores all permutations of parentheses 
  *
  * displays the contents on vector on console
  *
