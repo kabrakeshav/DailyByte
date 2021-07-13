@@ -93,7 +93,7 @@ vector<vector<int>> combinationSum(vector<int>& v, int target)
 
 
 /** function print_answer
- * @param vector<vector<<int>>, denoting the array which stores all unique combinaations of sum
+ * @param vector<vector<<int>>, denoting the array which stores all unique combinations of sum
  *
  * displays the contents on vector on console
  *
